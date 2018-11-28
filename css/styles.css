@@ -1,1 +1,33 @@
 
+#nav-bar{
+  background-color: pink;
+  position:sticky;
+  top:0;
+  left:0;
+  padding-top: .5px;
+  padding-bottom: .5px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-left: 5%;
+  padding-right:5%;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+}
+#menu{
+  width:3%;
+}
+#logo{
+  width:5%;
+}
+.headings, #paragraphs{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
