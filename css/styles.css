@@ -1,12 +1,12 @@
 
 html{
   width:100%;
+  background-color:gray;
 }
 #nav-bar{
   background-color: #A0A6AC;
   opacity:.8;
   position:sticky;
-  width:100%;
   top:0;
   left:0;
   padding-top: .5px;
@@ -17,21 +17,54 @@ html{
   padding-left: 5%;
   padding-right:5%;
 }
-h1{
+#main-title{
   font-family: 'Noto Sans TC', sans-serif;
    font-size: 25px;
    color:white;
+   text-align: right;
+}
+h1{
+  font-family: 'Noto Sans TC', sans-serif;
+   font-size: 50px;
+   text-align: center;
+}
+#main-subtitle{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color:#ED8779;
+  text-align: right;
+
 }
 h2{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color:#ED8779;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 h3{
   font-family: 'Roboto Condensed', sans-serif;
 
 }
+.topics{
+  padding-left: 10%;
+  background-color: white;
+  opacity:.8;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.topics:hover{
+  background-color: #ED8779;
+  opacity:0.8;
+}
+#government-topics{
+  margin-bottom: 5%;
+}
 a{
   text-decoration: none;
+  font-weight: normal;
+  color:#3C3A3A;
 }
 
 #menu{
@@ -40,14 +73,13 @@ a{
 #logo{
   width:5%;
 }
-.headings, #paragraphs{
+.headings{
   display: flex;
   align-items: center;
   justify-content:space-between;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  padding-top: 15px;
-  padding-left: 10px;
+
 }
 #first-section{
   width:100%;
@@ -64,12 +96,23 @@ a{
   text-align: right;
 }
 
-#second-section, #third-section, #fourth-section, #fifth-section{
+#second-section,#fourth-section, #fifth-section{
 background-size: cover;
-background-image: url(../img/first_slide_bkgrd.jpg);
+background-image: url(../img/skyscraper.jpeg);
 background-repeat:no-repeat;
 width:100%;
 height:730px;
 top:0;
 left:0;
 }
+#third-section{
+  background-size: cover;
+  background-image: url(../img/bell-tower.jpg);
+  background-repeat:no-repeat;
+  width:100%;
+  height:730px;
+  top:0;
+  left:0;
+}
+/*background images:
+Skyscraper with sky, Photo by Scott Webb: Webbhttps://unsplash.com/photos/6uemtRf4VrA
