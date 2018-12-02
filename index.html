@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta keywords="asian, american, representation, journalism, reporting, chapel hill, nc, unc, unc chapel hill, sivonne ward" />
+  <meta description="Asian-American Representation in Chapel Hill, NC" />
+
   <title>Asian-American Representation in Chapel Hill, NC</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet"><body>
-  <div id="nav-bar">
-    <img src="img/logo.svg" alt="Sivonne Ward Logo"id="logo">
-    <h3><a href>Education</a></h3>
-    <h3><a href>Government</a></h3>
-    <h3><a href>Business</a></h3>
-    <h3><a href>Citizenship & Identity</a></h3>
-    <h3><a href>About</a></h3>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
+  <script>
+    $.scrollify({
+      section : ".section",
+    });
+</script>
+</head>
 
+<body>
+
+
+  <div id="nav-bar">
+    <a href="http://sivonne-ward.com/"><img src="img/logo.svg" alt="Sivonne Ward Logo"id="logo"></a>
+    <h3><a href="#second-section">Education</a></h3>
+    <h3><a href="#third-section">Government</a></h3>
+    <h3><a href="#third-section">Business</a></h3>
+    <h3><a href="#fourth-section">Citizenship & Identity</a></h3>
+    <h3><a href="#fifth-section">About</a></h3>
   <!-- <img src="img/hamburger.png" alt="Hamburger Menu"id="menu"> -->
   </div>
-  <div id="first-section">
+  <div class="section"id="first-section">
     <h1 id="main-title">Asian-Americans make up over 12% of the Chapel Hill population.</h1>
     <h2 id="main-subtitle">But is the town adapting to fit this growing population?</h2>
+    <img src="img/down-arrow.png" alt="Down Arrow"id="arrow"/>
   </div>
-  <div id="second-section">
+  <div class="section"id="second-section">
     <h1>Education</h1>
-    <h2>The Univeristy of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
-    <div id="education-topics">
-      <a href><h3 class="topics">Celebrating a History Without a Department</h3></a>
+    <h2>The University of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
+    <div class="section"id="education-topics">
+      <a href="celebrating_history_without_department.html"><h3 class="topics">Celebrating a History Without a Department</h3></a>
       <a href><h3 class="topics">A Major Deal for the Korean Department</h3></a>
       <a href><h3 class="topics">Silent Sam, Asian-American Representation and their Unlikely Connections</h3></a>
       <a href><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
       <a href><h3 class="topics">A Magnet for Controversy</h3></a>
     </div>
+    <img src="img/down-arrow.png" alt="Down Arrow"class="arrows"/>
   </div>
-  <div id="third-section">
+  <div class="section"id="third-section">
       <h1>Government</h1>
       <h2>The Univeristy of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
       <div id="government-topics">
@@ -42,20 +58,29 @@
         <a href><h3 class="topics">The Implications of a Sudden Increase in Asian-run Businesses in Chapel Hill</h3></a>
       </div>
   </div>
-  <div id="fourth-section">
+  <div class="section"id="fourth-section">
     <h1>Citizenship & Immigration</h1>
     <h2>But is the town adapting to fit this growing population?</h2>
     <div id="citizen-topics">
       <a href><h3 class="topics">“Asian” or “Asian-American”?</h3></a>
       <a href><h3 class="topics">The Mix of Southern Identities</h3></a>
+      <a href="american_immigration_question.html"><h3 class="topics">The American Immigration Question</h3></a>
+     </div>
+  </div>
+  <div class="section"id="fifth-section">
+    <h1>About This Project</h1>
+    <h2>But is the town adapting to fit this growing population?</h2>
+    <div id="citizen-topics">
+      <a href><h3 class="topics">“Asian” or “Asian-American”?</h3></a>
+      <a href><h3 class="topics">The Mix of Southern Identities</h3></a>
       <a href><h3 class="topics">The American Immigration Question</h3></a>
-
     </div>
   </div>
 
 
-
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script type='text/javascript' src='config.js'></script>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
