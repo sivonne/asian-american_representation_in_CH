@@ -147,9 +147,19 @@ justify-content: center;
 }
 
 
+#news-section{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
-
-
+.thumbnail{
+  width:200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
 
 
