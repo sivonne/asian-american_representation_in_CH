@@ -8,60 +8,51 @@
 
   <title>Asian-American Representation in Chapel Hill, NC</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
-
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
+  <!-- Load font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-
-  <!-- <div id="nav-bar">
-    <a href="http://sivonne-ward.com/"><img src="img/logo.svg" alt="Sivonne Ward Logo"id="logo"></a>
-    <h3><a href="#index.html">Home</a></h3>
-    <h3><a href="#second-section">Education</a></h3>
-    <h3><a href="#third-section">Government</a></h3>
-    <h3><a href="#third-section">Business</a></h3>
-    <h3><a href="#fourth-section">Citizenship & Identity</a></h3>
-    <h3><a href="#fifth-section">About</a></h3>
-   <img src="img/hamburger.png" alt="Hamburger Menu"id="menu">
-  </div> -->
-  <!-- <a href="celebrating_history_without_department.html"><h3 class="topics">Celebrating a History Without a Department</h3></a>
-  <a href="#"><h3 class="topics">A Major Deal for the Korean Department</h3></a>
-  <a href="#"><h3 class="topics">Silent Sam, Asian-American Representation and their Unlikely Connections</h3></a>
-  <a href="#"><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
-  <a href="#"><h3 class="topics">A Magnet for Controversy</h3></a> -->
-
-<!--https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
-  <div class="topnav" id="myTopnav">
-    <a href="#index.html">Home</a>
-      <div class="dropdown">
-
-        <button class="dropbtn">Education
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#second-section">Education</a>
-          <a href="celebrating_history_without_department.html">Celebrating a History Without a Department</a>
-          <a href="#">A Major Deal for the Korean Department</a>
-          <a href="#">Silent Sam, Asian-American Representation and their Unlikely Connections</a>
-          <a href="#">There isn’t an Asian-American Studies Department?</a>
-          <a href="#">A Magnet for Controversy</a>
-        </div>
+  <!-- The navigation menu -->
+  <div class="navbar">
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#first-section">Home</a></button>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#second-section">Education</a></button>
+      <div class="subnav-content">
+        <a href="celebrating_history_without_department.html">Celebrating a History Without a Department</a>
+        <a href="#">A Major Deal for the Korean Department</a>
+        <a href="#">Silent Sam, Asian-American Representation and their Unlikely Connections</a>
+        <a href="#">There isn’t an Asian-American Studies Department?</a>
+        <a href="#">A Magnet for Controversy</a>
       </div>
-    <a href="#third-section">Government</a>
-
-    <a href="#third-section">Business</a>
-    <a href="#fourth-section">Citizenship & Identity</a>
-    <a href="#fifth-section">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#third-section">Government</a></button>
+      <div class="subnav-content">
+        <a href="does_govt_chapel_hill_represent.html">Does the Chapel Hill Government Represent its Asian-American residents?</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#business-section">Business</a></button>
+      <div class="subnav-content">
+        <a href="implications_asian-run_businesses_in_ch.html">The Implications of a Sudden Increase in Asian-run Businesses in Chapel Hill</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#fourth-section">Citizenship & Identity</a></button>
+      <div class="subnav-content">
+        <a href="american_immigration_question.html">The American Immigration Question</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="#fifth-section">About</a></button>
+    </div>
   </div>
-
-
-
 
 
 
@@ -71,9 +62,9 @@
   <div class="section"id="first-section">
     <h1 id="main-title">Asian-Americans make up over 12% of the Chapel Hill population.</h1>
     <h2 id="main-subtitle">But is the town adapting to fit this growing population?</h2>
-    <img src="img/down-arrow.png" alt="Down Arrow"id="arrow"/>
   </div>
   <div id="census-section">
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
 
   </div>
   <div class="section"id="second-section">
@@ -86,22 +77,21 @@
       <a href><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
       <a href><h3 class="topics">A Magnet for Controversy</h3></a>
     </div>
-    <img src="img/down-arrow.png" alt="Down Arrow"class="arrows"/>
   </div>
   <div class="section"id="third-section">
-      <h1>Government</h1>
+      <h1 class="lighter-h1">Government</h1>
       <h2>The Univeristy of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
       <div id="government-topics">
         <a href="does_govt_chapel_hill_represent.html"><h3 class="topics">Does the Chapel Hill Government Represent its Asian-American residents?</h3></a>
       </div>
-      <h1>Business</h1>
+      <h1 id="business-section">Business</h1>
       <h2>But is the town adapting to fit this growing population?</h2>
       <div id="business-topics">
         <a href="implications_asian-run_businesses_in_ch.html"><h3 class="topics">The Implications of a Sudden Increase in Asian-run Businesses in Chapel Hill</h3></a>
       </div>
   </div>
   <div class="section"id="fourth-section">
-    <h1>Citizenship & Immigration</h1>
+    <h1 class="lighter-h1">Citizenship & Immigration</h1>
     <h2>But is the town adapting to fit this growing population?</h2>
     <div id="citizen-topics">
       <a href><h3 class="topics">“Asian” or “Asian-American”?</h3></a>
@@ -158,13 +148,18 @@
 
   </div>
 
+
+  <div class="news-section">
+  </div>
+
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 <!--Google Books API-->
   <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 
 
