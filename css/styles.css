@@ -94,6 +94,8 @@ html{
   display: block;
 }
 
+/*For media query when in mobile viewing*/
+
 #main-title{
   font-family: 'Noto Sans TC', sans-serif;
    font-size: 35px;
