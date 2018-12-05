@@ -2,7 +2,7 @@
 html{
   width:100%;
 
-  background-color: gray;
+  background-color: #E6F2EB;
 }
 #nav-bar{
   width:90%;
@@ -188,8 +188,8 @@ justify-content: center;
 }
 .box{
   width:70%;
-  float:center;
-
+  /*float:center;
+*/
 }
 
 
@@ -207,7 +207,11 @@ justify-content: center;
   align-content:
 }
 
+p{
+  font-family: 'Noto Sans TC', sans-serif;
+  color:gray;
 
+}
 
 
 
@@ -223,4 +227,4 @@ justify-content: center;
 /*background images:
 Skyscraper with sky, Photo by Scott Webb: Webbhttps://unsplash.com/photos/6uemtRf4VrA
 Plane Photo by beasty: https://unsplash.com/photos/clzzNQKfRTA
-https://www.w3schools.com/howto/howto_js_dropdown.asp
+W3 Schools: Dropdown Menus: https://www.w3schools.com/howto/howto_js_dropdown.asp
