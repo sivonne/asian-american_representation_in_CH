@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -20,28 +21,20 @@
 
   <div id="nav-bar">
     <a href="http://sivonne-ward.com/"><img src="img/logo.svg" alt="Sivonne Ward Logo"id="logo"></a>
-    <a href="#index.html"><h3 class="topics">Home</h3></a>
-  <div class="dropdown">
-      <button onclick="dropsDown()" class="dropbtn"><h3><a href="#second-section">Education</a></h3></button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="celebrating_history_without_department.html"><h3 class="topics">Celebrating a History Without a Department</h3></a>
-        <a href="#"><h3 class="topics">A Major Deal for the Korean Department</h3></a>
-        <a href="#"><h3 class="topics">Silent Sam, Asian-American Representation and their Unlikely Connections</h3></a>
-        <a href="#"><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
-        <a href="#"><h3 class="topics">A Magnet for Controversy</h3></a>
-      </div>
-    </div>
-
-
-
-
-
+    <h3><a href="#index.html">Home</a></h3>
+    <h3><a href="#second-section">Education</a></h3>
     <h3><a href="#third-section">Government</a></h3>
     <h3><a href="#third-section">Business</a></h3>
     <h3><a href="#fourth-section">Citizenship & Identity</a></h3>
     <h3><a href="#fifth-section">About</a></h3>
   <!-- <img src="img/hamburger.png" alt="Hamburger Menu"id="menu"> -->
   </div>
+  <!-- <a href="celebrating_history_without_department.html"><h3 class="topics">Celebrating a History Without a Department</h3></a>
+  <a href="#"><h3 class="topics">A Major Deal for the Korean Department</h3></a>
+  <a href="#"><h3 class="topics">Silent Sam, Asian-American Representation and their Unlikely Connections</h3></a>
+  <a href="#"><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
+  <a href="#"><h3 class="topics">A Magnet for Controversy</h3></a> -->
+
 
 
   <div class="section"id="first-section">
@@ -68,7 +61,7 @@
       <h1>Government</h1>
       <h2>The Univeristy of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
       <div id="government-topics">
-        <a href><h3 class="topics">Does the Chapel Hill Government Represent its Asian-American residents?</h3></a>
+        <a href="does_govt_chapel_hill_represent.html"><h3 class="topics">Does the Chapel Hill Government Represent its Asian-American residents?</h3></a>
       </div>
       <h1>Business</h1>
       <h2>But is the town adapting to fit this growing population?</h2>
@@ -90,17 +83,33 @@
     <h1>About This Project</h1>
     <h2>But is the town adapting to fit this growing population?</h2>
     <div id="citizen-topics">
-      <a href><h3 class="topics">“Asian” or “Asian-American”?</h3></a>
-      <a href><h3 class="topics">The Mix of Southern Identities</h3></a>
-      <a href><h3 class="topics">The American Immigration Question</h3></a>
-    </div>
-  </div>
+      <p>
+        Look in the Google Books library for more information about Asian-American Studies, Asian-American population in Chapel Hill, or any of the other topics mentioned in the articles:
+      </p>
+      <div id="google-books">
 
+        <div id="viewerCanvas" style="width: 500px; height: 400px"></div>
+        <div id="viewerCanvas2" style="width: 500px; height: 400px"></div>
+        <div id="viewerCanvas3" style="width: 500px; height: 400px"></div>
+        <div id="viewerCanvas4" style="width: 500px; height: 400px"></div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="section"id="sixth-section">
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script type='text/javascript' src='config.js'></script>
+<!--Google Books API-->
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
 
+  <script type='text/javascript' src='config.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 
   <script src="js/scripts.js"></script>
 </body>
