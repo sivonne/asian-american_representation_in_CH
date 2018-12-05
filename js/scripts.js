@@ -1,63 +1,123 @@
 $(document).ready(function(){
     console.log('scripts loaded');
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //DATA USA API AJAX Call
 
-    var url =
-    'https://api.datausa.io/api/?sort=desc&force=acs.yg_race&show=geo&sumlevel=all&year=all&geo=16000US3711800';
-    var data = [];
-    var html = '';
-    var i = '';
-    var years = [];
-      $.ajax({
-        type:'GET',
-        url:url,
-        dataType:'json',
-        async:true,
-        data:data,
-        success:function(data){
-          console.log(data);
-          years = data.years;
-          //charts js
-          var ctx = document.getElementById("myChart").getContext('2d');
-          var myChart = new Chart(ctx, {
-              type: 'bar',
-              data: {
-                  labels: ["White", "Asian", "African-American", "...", "Purple", "Orange"],
-                  datasets: [{
-                      label: 'Chapel Hill Demographics 2013-2016',
-                      backgroundColor: [
-                          'rgba(255, 99, 132, 0.2)',
-                          'rgba(54, 162, 235, 0.2)',
-                          'rgba(255, 206, 86, 0.2)',
-                          'rgba(75, 192, 192, 0.2)',
-                          'rgba(153, 102, 255, 0.2)',
-                          'rgba(255, 159, 64, 0.2)'
-                      ],
-                      borderColor: [
-                          'rgba(255,99,132,1)',
-                          'rgba(54, 162, 235, 1)',
-                          'rgba(255, 206, 86, 1)',
-                          'rgba(75, 192, 192, 1)',
-                          'rgba(153, 102, 255, 1)',
-                          'rgba(255, 159, 64, 1)'
-                      ],
-                      borderWidth: 1
-                  }]
-              },
-              options: {
-                  scales: {
-                      yAxes: [{
-                          ticks: {
-                              beginAtZero:true
-                          }
-                      }]
-                  }
-              }
-          });
-}
-    });
+  //   var url =
+  //   'https://api.datausa.io/api/?sort=desc&force=acs.yg_race&show=geo&sumlevel=all&year=all&geo=16000US3711800';
+  // //   var data = [];
+  //   var html = '';
+  //   var years = [];
+  //     $.ajax({
+  //       type:'GET',
+  //       url:url,
+  //       dataType:'json',
+  //       async:true,
+  //       data:data,
+  //       success:function(data){
+  //         console.log(data);
+  //         //charts js
+  //         var ctx = $("#myChart");
+  //         var myChart = new Chart(ctx,{
+  //         type: 'pie',
+  //         data:{
+  //           datasets: [{
+  //           data: [10, 20, 30]
+  //   }],
+  //         },
+  //         options: options
+  //     });
+  //   }
+  // });
+  var dataPoints = [];
+  var chart = new CanvasJS.Chart("chartContainer",{
+      title:{
+          text:"Rendering Chart with dataPoints from External JSON"
+      },
+      data: [{
+          type: "line",
+          dataPoints : dataPoints,
+      }]
+  });
+  $.getJSON("https://api.datausa.io/api/?sort=desc&force=acs.yg_race&show=geo&sumlevel=all&year=all&geo=16000US3711800", function(data) {
+      $.each(data, function(key, value){
+          dataPoints.push({x: value[0], y: parseInt(value[1])});
+      });
+      chart.render();
+  });
 
 
+
+
+
+
+
+
+
+//           var ctx = $("#myChart");
+//           var myChart = new Chart(ctx, {
+//           type: 'bar',
+//           dataType:'json',
+//           async:true,
+//           data: {
+//               labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+//               datasets: [{
+//                   label: '# of Votes',
+//                   data: [],
+//                   backgroundColor: [
+//                       'rgba(255, 99, 132, 0.2)',
+//                       'rgba(54, 162, 235, 0.2)',
+//                       'rgba(255, 206, 86, 0.2)',
+//                       'rgba(75, 192, 192, 0.2)',
+//                       'rgba(153, 102, 255, 0.2)',
+//                       'rgba(255, 159, 64, 0.2)'
+//                   ],
+//                   borderColor: [
+//                       'rgba(255,99,132,1)',
+//                       'rgba(54, 162, 235, 1)',
+//                       'rgba(255, 206, 86, 1)',
+//                       'rgba(75, 192, 192, 1)',
+//                       'rgba(153, 102, 255, 1)',
+//                       'rgba(255, 159, 64, 1)'
+//                   ],
+//                   borderWidth: 1
+//               }]
+//           },
+//           options: {
+//               scales: {
+//                   yAxes: [{
+//                       ticks: {
+//                           beginAtZero:true
+//                       }
+//                   }]
+//               }
+//           }
+//       });
+// }
+// });
 
 
 //Google Books API

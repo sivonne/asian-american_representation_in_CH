@@ -19,7 +19,7 @@
 <body>
 
 
-  <div id="nav-bar">
+  <!-- <div id="nav-bar">
     <a href="http://sivonne-ward.com/"><img src="img/logo.svg" alt="Sivonne Ward Logo"id="logo"></a>
     <h3><a href="#index.html">Home</a></h3>
     <h3><a href="#second-section">Education</a></h3>
@@ -27,13 +27,44 @@
     <h3><a href="#third-section">Business</a></h3>
     <h3><a href="#fourth-section">Citizenship & Identity</a></h3>
     <h3><a href="#fifth-section">About</a></h3>
-  <!-- <img src="img/hamburger.png" alt="Hamburger Menu"id="menu"> -->
-  </div>
+   <img src="img/hamburger.png" alt="Hamburger Menu"id="menu">
+  </div> -->
   <!-- <a href="celebrating_history_without_department.html"><h3 class="topics">Celebrating a History Without a Department</h3></a>
   <a href="#"><h3 class="topics">A Major Deal for the Korean Department</h3></a>
   <a href="#"><h3 class="topics">Silent Sam, Asian-American Representation and their Unlikely Connections</h3></a>
   <a href="#"><h3 class="topics">There isn’t an Asian-American Studies Department?</h3></a>
   <a href="#"><h3 class="topics">A Magnet for Controversy</h3></a> -->
+
+<!--https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+  <div class="topnav" id="myTopnav">
+    <a href="#index.html">Home</a>
+      <div class="dropdown">
+
+        <button class="dropbtn">Education
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#second-section">Education</a>
+          <a href="celebrating_history_without_department.html">Celebrating a History Without a Department</a>
+          <a href="#">A Major Deal for the Korean Department</a>
+          <a href="#">Silent Sam, Asian-American Representation and their Unlikely Connections</a>
+          <a href="#">There isn’t an Asian-American Studies Department?</a>
+          <a href="#">A Magnet for Controversy</a>
+        </div>
+      </div>
+    <a href="#third-section">Government</a>
+
+    <a href="#third-section">Business</a>
+    <a href="#fourth-section">Citizenship & Identity</a>
+    <a href="#fifth-section">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+
+
+
+
 
 
 
@@ -86,17 +117,41 @@
       <p>
         Look in the Google Books library for more information about Asian-American Studies, Asian-American population in Chapel Hill, or any of the other topics mentioned in the articles:
       </p>
-      <div id="google-books">
 
-        <div id="viewerCanvas" style="width: 500px; height: 400px"></div>
-        <div id="viewerCanvas2" style="width: 500px; height: 400px"></div>
-        <div id="viewerCanvas3" style="width: 500px; height: 400px"></div>
-        <div id="viewerCanvas4" style="width: 500px; height: 400px"></div>
+<!--https://www.w3schools.com/howto/howto_css_flip_box.asp-->
+<div id="google-books">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Remapping Asian American History</h2>
+            <div id="viewerCanvas" style="width: 500px; height: 800px"></div>
+          </div>
+          <div class="flip-box-back">
+            <h2>"In Defense of Asian American Studies amounts to tales from the trenches on the origins and evolution of the field of Asian American studies, as told by one of its founders and most highly regarded scholars. With great intellectual energy, critical acumen, and a sly sense of humour, Sucheng Chan discusses her experiences on three campuses within the University of California system where Asian American studies was first developed--in response to vehement student demand--under the rubric of ethnic studies. Chan speaks by turns as an advocate and an administrator striving to secure a place for Asian American studies; as a teacher working to give Asian American students a voice and white students a perspective on race and racism; and as a scholar and researcher still asking her own questions. The essays span three decades, closing with a piece on new challenges that face Asian American studies. Eloquently documenting a field of endeavour in which scholarship and identity define and strengthen each other, this volume combines analysis, personal experience, and practical advice indispensable to those engaged in building and sustaining programs in Asian American studies." (Google Books)</h2>
+          </div>
+        </div>
       </div>
-
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Asian America Through the Lens</h2>
+            <div id="viewerCanvas2" style="width: 500px; height: 800px"></div>
+          </div>
+          <div class="flip-box-back">
+            <h2>"While some Asian American films and filmmakers are beginning to achieve acclaim in mainstream U.S. culture, neither academic scholars nor society as a whole has sufficiently taken account of the history of this rich and growing body of cinematic production. In Asian America Through the Lens, Jun Xing accomplishes the colossal task of surveying Asian American cinema for the first time, allowing its aesthetic, cultural, and political diversity and continuities to emerge. Unique insight into Asian American experience in both mainstream and alternative film production is provided by textual analysis as well as by the voices of filmmakers and actors themselves. With constant attention to the specificities of Asian American histories and cultures, Xing engages a broad range of issues and theoretical perspectives, drawing insight from such bodies of scholarship as African American and Latino film studies, Marxian cultural theory, ethnic studies and the politics of representation, and post-structuralist and feminist discourses." (Google Books)</h2>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
+</div>
+  <!-- <div id="google-books">
+
+    <div id="viewerCanvas" style="width: 500px; height: 400px"></div>
+    <div id="viewerCanvas2" style="width: 500px; height: 400px"></div>
+    <div id="viewerCanvas3" style="width: 500px; height: 400px"></div>
+    <div id="viewerCanvas4" style="width: 500px; height: 400px"></div>
+  </div> -->
   <div class="section"id="sixth-section">
 
   <canvas id="myChart" width="400" height="400"></canvas>
@@ -107,9 +162,14 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 <!--Google Books API-->
   <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
 
   <script type='text/javascript' src='config.js'></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+
 
   <script src="js/scripts.js"></script>
 </body>
