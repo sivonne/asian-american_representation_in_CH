@@ -95,6 +95,28 @@ html{
 }
 
 /*For media query when in mobile viewing*/
+/*Responsive Elements*/
+@media only screen and (max-width: 575px){
+.navbar{
+  display:none;
+}
+.topics{
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 0%;
+}
+#donutchart{
+  width:100%;
+}
+#census-section{
+flex-basis: 50%;
+flex-direction: column;
+
+}
+/* #education-topics,#government-topics, #business-topics, #citizen-topics{
+  margin-left:0px;
+} */
+}
 
 #main-title{
   font-family: 'Noto Sans TC', sans-serif;
@@ -208,6 +230,7 @@ justify-content: center;
   width:100%;
   height:900px;
 }
+
 #third-section{
   background-size: cover;
   background-image: url(../img/path.jpg);
@@ -222,6 +245,16 @@ justify-content: center;
   top:0;
   left:0;
 }
+#fifth-text{
+  margin-left: 10%;
+  margin-right:10%;
+}
+#fifth-section{
+  margin-bottom: 10%;
+}
+#sixth-section{
+  margin-top: 10%;
+}
 .article-format{
   margin:10%;
 }
@@ -233,6 +266,9 @@ justify-content: center;
   /*float:center;
 */
 }
+#boba{
+  width:50%;
+}
 
 
 .news-section{
@@ -240,6 +276,7 @@ justify-content: center;
   align-content: center;
   justify-content: center;
   flex-direction: row;
+  overflow: scroll;
 }
 
 .latest-news{
@@ -250,7 +287,7 @@ justify-content: center;
   grid-column:50%;
 }
 .thumbnail{
-  width:300px;
+  width:50%;
   display: flex;
   justify-content: center;
   align-self:center;
@@ -272,11 +309,12 @@ p{
 
   justify-content: center;
   align-items: center;
+  margin-bottom: 40%;
 }
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
-  width: 500px; height: 800px;
+  width: 400px; height: 500px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -312,9 +350,18 @@ p{
 
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: #F7D9DF;
   color: white;
   transform: rotateY(180deg);
+}
+#census-section{
+  /* margin-left: 15%; */
+  display:flex;
+
+}
+#donutchart{
+  background-color:#E6F2EB;
+
 }
 
 
@@ -324,6 +371,8 @@ Plane Photo by beasty: https://unsplash.com/photos/clzzNQKfRTA
 Protest Signs by Nitish Meena: https://unsplash.com/photos/IFh4o-U-BGg
 Man Holding a Loudspeaker by Melany Rochester: https://unsplash.com/photos/FAQ4RE76Nvs
 W3 Schools: Dropdown Menus: https://www.w3schools.com/howto/howto_js_dropdown.asp,
-Flipbox: https://www.w3schools.com/howto/howto_css_flip_box.asp,
-Dropdown Menubar: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
-Smooth Scrolling: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1
+  Flipbox: https://www.w3schools.com/howto/howto_css_flip_box.asp,
+  Dropdown Menubar: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp,
+  Smooth Scrolling: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1,
+  Animated Menu Icon: https://www.w3schools.com/howto/howto_css_menu_icon.asp
+  Responsiveness: https://www.w3schools.com/css/css_rwd_viewport.asp
