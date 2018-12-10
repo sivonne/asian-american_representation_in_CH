@@ -143,6 +143,14 @@ h2{
 h3{
   font-family: 'Roboto Condensed', sans-serif;
 }
+/*assigns font-size for h3 throughout document*/
+h4{
+  font-size: 24px;
+}
+/*assigns font color for h5 throughout document*/
+h5{
+  color:gray;
+}
 /*h3 for topics buttons for different articles within each genre/section; adjusts padding, margin, background, and opacity*/
 .topics{
   padding-left: 10%;
@@ -200,7 +208,7 @@ h3{
   padding-right: 5%;
 }
 /*for second and fifth sections, adds background photo, sets it up in left upperhand corner, aligns elements*/
-#second-section,#fifth-section{
+#second-section{
 background-size: cover;
 background-image: url(../img/skyscraper.jpeg);
 background-repeat:no-repeat;
@@ -230,45 +238,42 @@ justify-content: center;
 }
 #fifth-section{
   margin-bottom: 10%;
+background-size: cover;
+background-image: url(../img/sky.jpg);
+background-repeat:no-repeat;
+top:0;
+left:0;
+align-items: center;
+justify-content: center;
 }
 #news-section{
-  margin-top: 10%;
-  margin-left: 30%;
+margin-top: 10%;
+  margin-left: 15%;
 }
 
 
 .news-section{
-  /* display: flex;
+  display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: row;
-  overflow: scroll; */
+  overflow: scroll;
 }
 
 .latest-news{
-  /* justify-content: center;
+ justify-content: center;
   align-items: center;
   flex-flow: row;
   display:grid;
   grid-column:50%; */
 }
 .thumbnail{
-  width:50%;
-  display: flex;
-  justify-content: center;
-  align-self:center;
-
+  width:80%;
 }
-/* .headline{
-text-align: center;
-} */
-
 p{
   font-family: 'Noto Sans TC', sans-serif;
   color:gray;
-
 }
-
 #google-books{
   display: flex;
   flex-direction: row;
@@ -314,6 +319,7 @@ a{
 
 
 
+
 /*background images:
 Skyscraper with sky, Photo by Scott Webb: Webbhttps://unsplash.com/photos/6uemtRf4VrA
 Plane Photo by beasty: https://unsplash.com/photos/clzzNQKfRTA
@@ -327,3 +333,4 @@ W3 Schools: Dropdown Menus: https://www.w3schools.com/howto/howto_js_dropdown.as
   Responsiveness: https://www.w3schools.com/css/css_rwd_viewport.asp
   SubNav:https://www.w3schools.com/howto/howto_css_subnav.asp
   Meta Tags:https://www.w3schools.com/tags/tag_meta.asp
+  Scroll to Top Button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
