@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta keywords="asian, american, representation, journalism, reporting, chapel hill, nc, unc, unc chapel hill, sivonne ward" />
-  <meta description="Asian-American Representation in Chapel Hill, NC" />
+  <meta charset="UTF-8">
+   <meta name="description" content="Asian-American Representation in Chapel Hill, NC">
+   <meta name="keywords" content="asian, american, representation, journalism, reporting, chapel hill, nc, unc, unc chapel hill, sivonne ward">
+   <meta name="author" content="Sivonne Ward">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Asian-American Representation in Chapel Hill, NC</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -15,11 +16,11 @@
 </head>
 
 <body>
-
   <!-- The navigation menu -->
   <div class="navbar">
+    <!-- The subnavigation menu (listing of menu options within menu options) -->
     <div class="subnav">
-      <button class="subnavbtn"><a href="#first-section">Home</a></button>
+      <button class="subnavbtn"><a href="#main-title">Home</a></button>
     </div>
     <div class="subnav">
       <button class="subnavbtn"><a href="#second-section">Education</a></button>
@@ -47,22 +48,34 @@
       <button class="subnavbtn"><a href="#fourth-section">Citizenship & Identity</a></button>
       <div class="subnav-content">
         <a href="american_immigration_question.html">The American Immigration Question</a>
+        <a href="under_construction.html">“Asian” or “Asian-American?”</a>
+        <a href="under_construction.html">The Mix of Southern Identities</a>
       </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn"><a href="news.html">News</a></button>
     </div>
     <div class="subnav">
       <button class="subnavbtn"><a href="#fifth-section">About</a></button>
     </div>
-  
+
   </div>
 
+<!--title page with subtitle-->
   <div class="section"id="first-section">
     <h1 id="main-title">Asian-Americans make up over 12% of the Chapel Hill population.</h1>
     <h2 id="main-subtitle">But is the town adapting to fit this growing population?</h2>
+    <!-- <img src="img/up-arrow.png" id="arrow"alt="Back to top button"> -->
+<!--need to add functionality to go to top-->
+    <img onclick="goToTop()"src="img/up-arrow.png"id="arrow"alt="Back to top button"/>
+
   </div>
+  <!--google charts page-->
   <div id="census-section">
     <h1>Asian-Americans make up the largest minority in Chapel Hill, NC.</h1>
     <div id="donutchart" style="width: 900px; height: 500px;"></div>
   </div>
+  <!--section for Education-->
   <div class="section"id="second-section">
     <h1>Education</h1>
     <h2>The University of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
@@ -74,28 +87,31 @@
       <a href="under_construction.html"><h3 class="topics">A Magnet for Controversy</h3></a>
     </div>
   </div>
+  <!--section for Government-->
   <div class="section"id="third-section">
       <h1 class="lighter-h1">Government</h1>
       <h2>The Univeristy of North Carolina at Chapel Hill plays a significant role in any happenings of the town. <br />Click on the articles below to read about some ways in which education affects Asian-American representation in Chapel Hill. </h2>
       <div id="government-topics">
         <a href="does_govt_chapel_hill_represent.html"><h3 class="topics">Does the Chapel Hill Government Represent its Asian-American residents?</h3></a>
       </div>
+      <!--section for Business-->
       <h1 id="business-section">Business</h1>
       <h2>But is the town adapting to fit this growing population?</h2>
       <div id="business-topics">
         <a href="implications_asian-run_businesses_in_ch.html"><h3 class="topics">The Implications of a Sudden Increase in Asian-run Businesses in Chapel Hill</h3></a>
       </div>
   </div>
+  <!--section for Citizenship & Immigration-->
   <div class="section"id="fourth-section">
     <h1 class="lighter-h1">Citizenship & Immigration</h1>
     <h2>But is the town adapting to fit this growing population?</h2>
     <div id="citizen-topics">
+      <a href="american_immigration_question.html"><h3 class="topics">The American Immigration Question</h3></a>
       <a href><h3 class="topics">“Asian” or “Asian-American”?</h3></a>
       <a href><h3 class="topics">The Mix of Southern Identities</h3></a>
-      <a href="american_immigration_question.html"><h3 class="topics">The American Immigration Question</h3></a>
      </div>
   </div>
-
+  <!--section for About-->
   <div class="section"id="fifth-section">
     <h1>About This Project</h1>
     <div id="fifth-text">
@@ -107,40 +123,17 @@
       </p>
       </div>
 
-<!--https://www.w3schools.com/howto/howto_css_flip_box.asp-->
+<!--Code for flipping google books, with source code from:
+https://www.w3schools.com/howto/howto_css_flip_box.asp-->
 <div id="google-books">
-      <div class="flip-box">
-        <div class="flip-box-inner">
-          <div class="flip-box-front">
             <h2>Remapping Asian American History</h2>
             <div id="viewerCanvas" style="width: 400px; height: 500px"></div>
-          </div>
-          <div class="flip-box-back">
-            <p>"In Defense of Asian American Studies amounts to tales from the trenches on the origins and evolution of the field of Asian American studies, as told by one of its founders and most highly regarded scholars. With great intellectual energy, critical acumen, and a sly sense of humour, Sucheng Chan discusses her experiences on three campuses within the University of California system where Asian American studies was first developed--in response to vehement student demand--under the rubric of ethnic studies. Chan speaks by turns as an advocate and an administrator striving to secure a place for Asian American studies; as a teacher working to give Asian American students a voice and white students a perspective on race and racism; and as a scholar and researcher still asking her own questions. The essays span three decades, closing with a piece on new challenges that face Asian American studies. Eloquently documenting a field of endeavour in which scholarship and identity define and strengthen each other, this volume combines analysis, personal experience, and practical advice indispensable to those engaged in building and sustaining programs in Asian American studies." (Google Books)</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-box">
-        <div class="flip-box-inner">
-          <div class="flip-box-front">
+
+            
             <h2>Asian America Through the Lens</h2>
             <div id="viewerCanvas2" style="width: 400px; height: 500px"></div>
-          </div>
-          <div class="flip-box-back">
-            <p>"While some Asian American films and filmmakers are beginning to achieve acclaim in mainstream U.S. culture, neither academic scholars nor society as a whole has sufficiently taken account of the history of this rich and growing body of cinematic production. In Asian America Through the Lens, Jun Xing accomplishes the colossal task of surveying Asian American cinema for the first time, allowing its aesthetic, cultural, and political diversity and continuities to emerge. Unique insight into Asian American experience in both mainstream and alternative film production is provided by textual analysis as well as by the voices of filmmakers and actors themselves. With constant attention to the specificities of Asian American histories and cultures, Xing engages a broad range of issues and theoretical perspectives, drawing insight from such bodies of scholarship as African American and Latino film studies, Marxian cultural theory, ethnic studies and the politics of representation, and post-structuralist and feminist discourses." (Google Books)</p>
-          </div>
-        </div>
-      </div>
     </div>
-
 </div>
-
-  <div class="section"id="sixth-section">
-    <h2>Here's some recent news about Asian-Americans in the media</h2>
-
-    <div class="news-section">
-    </div>
-  </div>
 
 
 

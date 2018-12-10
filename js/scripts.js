@@ -93,7 +93,7 @@ var i = '';
 
   });
   //places html in the news section at the bottom of the first page
-  $('.news-section').html(html);
+  $('#news-section').html(html);
   }
   });
 
@@ -101,6 +101,35 @@ var i = '';
   function myFunction(x) {
       x.classList.toggle("change");
   }
+//
+// var toTopButton;
+//
+// function toTop(){
+//   this.getElementById('#arrow').link
+// }
+// When the user scrolls down 20px from the top of the document, show the button
+//for the "scroll to top" button, source code from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("arrow").style.display = "block";
+  } else {
+    document.getElementById("arrow").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function goToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+
+
+
 
 
 

@@ -1,131 +1,115 @@
 
+/*makes whole page full-width, smooth scroll, background color of mint*/
 html{
   width:100%;
   scroll-behavior: smooth;
   background-color: #E6F2EB;
 }
-/* #nav-bar{
-  width:90%;
-  background-color: white;
-  /* opacity:.8;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:10;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  padding-left: 5%;
-  padding-right:5%;
-} */
-/* The navigation menu */
-.navbar {
-  background-color: #333;
-  font-family: 'Noto Sans TC', sans-serif;
-  display: flex;
-  position:fixed;
-  width:100%;
-  z-index:1;
-  top:0;
-  left:0;
+/*Subnav source code from:
+https://www.w3schools.com/howto/howto_css_subnav.asp*/
 
-}
+  /* The navigation menu, gray background, upper left corner, spread out options and fixed for top of page */
+  .navbar {
+    background-color: #333;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+    left:0;
+  }
+  /* Navigation links, color/size/position of main nav links, loses text decoration */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* The subnavigation menu */
+  .subnav {
+    overflow: hidden;
+  }
 
-/* Navigation links */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  /* Subnav buttons, for subnav options, determines color, takes away borders and changes padding*/
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+  }
 
-}
-
-/* The subnavigation menu */
-.subnav {
-
-  overflow: hidden;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: 'Noto Sans TC', sans-serif;
-  margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #96C3AA;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #96C3AA;
-  width: 100%;
-  z-index:1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: white;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: #eee;
-  color: gray;
-  opacity:.8;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
+  /* Add a mint background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #96C3AA;
+  }
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #96C3AA;
+    width: 100%;
+    z-index:1;
+  }
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  /*On hover, reverse the font and background colors of the subnavs */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: #96C3AA;
+    opacity:.8;
+  }
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
 
 /*For media query when in mobile viewing*/
 /*Responsive Elements*/
+/*takes away nav bar, changes margins, flex*/
 @media only screen and (max-width: 575px){
-.navbar{
-  display:none;
-}
-.topics{
-  margin-left: 0%;
-  margin-right: 0%;
-  padding-left: 0%;
-}
-#donutchart{
-  width:100%;
-}
-#census-section{
-flex-basis: 50%;
-flex-direction: column;
+  .navbar{
+    display:none;
+  }
+  .topics{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+  }
+  #donutchart{
+    width:100%;
 
-}
-/* #education-topics,#government-topics, #business-topics, #citizen-topics{
-  margin-left:0px;
-} */
-}
+  }
+  #census-section{
+  flex-basis: 50%;
+  flex-direction: column;
 
+  }
+  #education-topics,#government-topics, #business-topics, #citizen-topics{
+    margin-left:0px;
+  }
+}
+/*in first section, alters the color, alignment, sizing for h1*/
 #main-title{
   font-family: 'Noto Sans TC', sans-serif;
    font-size: 35px;
    color:white;
    text-align: left;
-     margin-left: 5%;
-     margin-right: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
 }
+/*assigns font, padding, color for h1 throughout document*/
 h1{
   font-family: 'Noto Sans TC', sans-serif;
    font-size: 50px;
@@ -134,18 +118,20 @@ h1{
    color:#4F607C;
    text-shadow:black;
 }
+/*assigns lighter color for h1s that have dark backgrounds*/
 .lighter-h1{
   color:#FFFFFF;
 
 }
+/*assigns specific color, font, style for h2 on the first section*/
 #main-subtitle{
   font-family: 'Open Sans Condensed', sans-serif;
   color:#ED8779;
   text-align: right;
   font-size: 25px;
   font-style: italic;
-
 }
+/*assigns font, margin, alignment, color for h2 throughout document*/
 h2{
   font-family: 'Open Sans Condensed', sans-serif;
   color:#ED8779;
@@ -153,39 +139,43 @@ h2{
   margin-left: 5%;
   margin-right: 5%;
 }
+/*assigns font for h3 throughout document*/
 h3{
   font-family: 'Roboto Condensed', sans-serif;
-
 }
+/*h3 for topics buttons for different articles within each genre/section; adjusts padding, margin, background, and opacity*/
 .topics{
   padding-left: 10%;
   background-color: white;
+  color:#3C3A3A;
   opacity:.8;
   padding-top: 2%;
   padding-bottom: 2%;
   margin-left: 25%;
   margin-right: 25%;
 }
+/*on hover, changes the background and opacity of the topics buttons for each genre/section*/
 .topics:hover{
   background-color: #ED8779;
   opacity:0.8;
 }
+/*gave room to bottom of government topics, since the business section is sharing the same overarching background photo*/
 #government-topics{
   margin-bottom: 5%;
 }
-a{
-  text-decoration: none;
-  font-weight: normal;
-  color:#3C3A3A;
+/*for all sections, adds a padding to bottom*/
+.section{
+  padding-bottom: 5%;
+  width:100%;
+  height:900px;
 }
+/*adjusts height and width of each section*/
+/* #first-section, #second-image, #third-section, #fourth-section, #fifth-section{
+  width:100%;
+  height:900px;
+} */
 
-#menu{
-  width:3%;
-}
-#logo{
-  width:40%;
-}
-
+/*for the first section, sets background image, aligns to upper lefthand corner, adds padding and text alignment*/
 #first-section{
   z-index:0;
   top:0;
@@ -201,21 +191,15 @@ a{
   margin-right: 10%;
   text-align: right;
 }
+/*for the "go-to-top" arrow, fixed to bottom right corner, with smaller width and pointer cursor*/
 #arrow{
+  position:fixed;
   width:5%;
-  align-self: center;
-  padding-top: 15%;
+  float:right;
   cursor: pointer;
+  padding-right: 5%;
 }
-.arrows{
-  cursor: pointer;
-  align-self: center;
-  width:5%;
-  padding-left: 48%;
-}
-.section{
-  padding-bottom: 5%;
-}
+/*for second and fifth sections, adds background photo, sets it up in left upperhand corner, aligns elements*/
 #second-section,#fifth-section{
 background-size: cover;
 background-image: url(../img/skyscraper.jpeg);
@@ -224,11 +208,6 @@ top:0;
 left:0;
 align-items: center;
 justify-content: center;
-}
-#first-section, #second-image, #third-section, #fourth-section, #fifth-section{
-
-  width:100%;
-  height:900px;
 }
 
 #third-section{
@@ -252,39 +231,26 @@ justify-content: center;
 #fifth-section{
   margin-bottom: 10%;
 }
-#sixth-section{
+#news-section{
   margin-top: 10%;
-}
-.article-format{
-  margin:10%;
-}
-.article-photos{
-  width:70%;
-  align-self: center;
-  justify-content: center;
-
-  /*float:center;
-*/
-}
-#boba{
-  width:50%;
+  margin-left: 30%;
 }
 
 
 .news-section{
-  display: flex;
+  /* display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: row;
-  overflow: scroll;
+  overflow: scroll; */
 }
 
 .latest-news{
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
   flex-flow: row;
   display:grid;
-  grid-column:50%;
+  grid-column:50%; */
 }
 .thumbnail{
   width:50%;
@@ -293,9 +259,9 @@ justify-content: center;
   align-self:center;
 
 }
-.headline{
+/* .headline{
 text-align: center;
-}
+} */
 
 p{
   font-family: 'Noto Sans TC', sans-serif;
@@ -311,58 +277,41 @@ p{
   align-items: center;
   margin-bottom: 40%;
 }
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 400px; height: 500px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
 
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: #F7D9DF;
-  color: white;
-  transform: rotateY(180deg);
-}
 #census-section{
   /* margin-left: 15%; */
   display:flex;
-
 }
-#donutchart{
-  background-color:#E6F2EB;
 
+
+
+/*individual article format, with margins*/
+.article-format{
+  margin:10%;
 }
+/*individual article format for photos, central alignment and lowered width*/
+.article-photos{
+  width:70%;
+  align-self: center;
+  justify-content: center;
+}
+/*adjusts size of the boba photo in immplication_asian_run_businesses_in_CH*/
+#boba{
+  width:50%;
+}
+/*for source links, gives text color and font weight*/
+a{
+  text-decoration: none;
+  font-weight:100;
+  color:#43BA9C;
+}
+
+
+
+
+
+
+
 
 
 /*background images:
@@ -376,3 +325,5 @@ W3 Schools: Dropdown Menus: https://www.w3schools.com/howto/howto_js_dropdown.as
   Smooth Scrolling: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1,
   Animated Menu Icon: https://www.w3schools.com/howto/howto_css_menu_icon.asp
   Responsiveness: https://www.w3schools.com/css/css_rwd_viewport.asp
+  SubNav:https://www.w3schools.com/howto/howto_css_subnav.asp
+  Meta Tags:https://www.w3schools.com/tags/tag_meta.asp
