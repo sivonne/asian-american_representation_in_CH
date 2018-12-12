@@ -79,6 +79,9 @@ https://www.w3schools.com/howto/howto_css_subnav.asp*/
 /*Responsive Elements*/
 /*takes away nav bar, changes margins, flex*/
 @media only screen and (max-width: 575px){
+  img{
+    width:100%;
+  }
   .navbar{
     display:none;
   }
@@ -310,7 +313,9 @@ a{
   font-weight:100;
   color:#43BA9C;
 }
-
+#rrn{
+  width:50%;
+}
 
 
 
