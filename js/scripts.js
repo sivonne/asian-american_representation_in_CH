@@ -3,8 +3,10 @@ $(document).ready(function(){
 
 //Google Charts for Data Viz, Sourced from DATA USA
     google.charts.load("current", {packages:["corechart"]});
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
+          google.charts.setOnLoadCallback(homeChart);
+          google.charts.setOnLoadCallback(deconstructChart);
+
+          function homeChart() {
             var data = google.visualization.arrayToDataTable([
               ['Race', 'Percentage'],
               ['White',     .684],
@@ -15,9 +17,7 @@ $(document).ready(function(){
               ['Other',    .004],
               ['Native',    .003],
               ['Islander',    .00022]
-
             ]);
-
             var options = {
               title: 'Demographics for Chapel Hill, NC as of 2016',
               subtitle:'Source: DATA USA',
@@ -25,10 +25,32 @@ $(document).ready(function(){
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+
             chart.draw(data, options);
-          }//closes drawChart function
+          }
+                    function deconstructChart() {
+                      var data = google.visualization.arrayToDataTable([
+                        ['Race', 'Percentage'],
+                        ['Asian Indian',     1486],
+                        ['Chinese',    3507],
+                        ['Filipino',  297],
+                        ['Japanese', 170],
+                        ['Korean',    995],
+                        ['Vietnamese',    253],
+                        ['Other Asian Ethnicities',    789],
 
+                      ]);
 
+                      var options = {
+                        title: 'Demographics for Chapel Hill, NC as of 2016',
+                        subtitle:'Source: US Census Factfinder',
+                        pieHole: 0.3,
+                      };
+//
+                      var chart = new google.visualization.PieChart(document.getElementById('donut-chart1'));
+
+                      chart.draw(data, options);
+                    }//closes deconstructChart function
 
 
           //Google Books API, shows two books about Asian-American studies, then some CSS to make the book flip when hovered over
@@ -139,3 +161,4 @@ function goToTop(){
 
 
   });
+  //Google Charts info: https://developers.google.com/chart/interactive/docs/basic_multiple_charts

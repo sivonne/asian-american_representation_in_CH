@@ -99,6 +99,11 @@ https://www.w3schools.com/howto/howto_css_subnav.asp*/
   flex-direction: column;
 
   }
+  #census-section2{
+  flex-basis: 50%;
+  flex-direction: column;
+
+  }
   #education-topics,#government-topics, #business-topics, #citizen-topics{
     margin-left:0px;
   }
@@ -318,10 +323,43 @@ a{
 }
 
 
+.quotes{
+  font-family: 'Playfair Display', serif;
 
+  color:#345C8B;
+  font-size: 18px;
+  background-color: #D2D5D8;
+  padding:2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #D2D5D8;
+}
+.quotes-alternating{
+  font-family: 'Playfair Display', serif;
+  color:#345C8B;
+  font-size: 18px;
+  background-color: #E2DDD6;
+  padding:2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #E2DDD6;
+}
+.paragraph{
+  font-family: 'Noto Sans TC', sans-serif;
+  color:gray;
+    font-size: 18px;
+}
 
-
-
+#rrn-photo{
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}
 
 
 
